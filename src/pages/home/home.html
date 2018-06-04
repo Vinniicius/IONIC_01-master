@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar >
+    <ion-title>
+      GeoData
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      Continente:
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Selecione</ion-label>
+          <ion-select >
+            <ion-option >Todos</ion-option>  
+            <ion-option >Africa</ion-option> 
+            <ion-option >Americas</ion-option> 
+            <ion-option >Asia</ion-option>  
+            <ion-option >Europe</ion-option>  
+            <ion-option >Oceania</ion-option>            
+          </ion-select>
+        </ion-item>            
+      </ion-list>  
+    </ion-card-content>  
+  </ion-card>
+
+  <ion-grid>
+      <ion-row>
+        <ion-col col-12>
+          <button ion-button full color="dark" (click)="goToPaises()" >Listar</button>              
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>
